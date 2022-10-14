@@ -11,11 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        
-      - name: Set up JDK 11
-        uses: action/setup-java@v1
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.5.1
+
       
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
@@ -24,3 +25,4 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
         shell: bash
+
