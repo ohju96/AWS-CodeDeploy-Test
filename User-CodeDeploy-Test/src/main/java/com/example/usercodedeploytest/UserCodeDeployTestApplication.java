@@ -1,13 +1,13 @@
-package com.example.awscodedeploytest;
+package com.example.usercodedeploytest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AwsCodedeployTestApplication {
+public class UserCodeDeployTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AwsCodedeployTestApplication.class, args);
+        SpringApplication.run(UserCodeDeployTestApplication.class, args);
     }
 
 }
